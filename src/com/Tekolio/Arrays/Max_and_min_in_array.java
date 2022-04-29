@@ -10,6 +10,7 @@ public class Max_and_min_in_array {
         for (int i=0; i<n; i++) {
             A[i] = sc.nextInt();
         }
+
         /*
          * Using single loop
 

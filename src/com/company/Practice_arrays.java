@@ -1,5 +1,6 @@
 package com.company;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Practice_arrays {
@@ -212,5 +213,18 @@ public class Practice_arrays {
 //            }
 //        }
 //        System.out.println(count);
+        int n = sc.nextInt();
+        int[] arr = new int[n];
+        for(int i=0; i<n; i++) {
+            arr[i] = sc.nextInt();
+        }
+        for(int i=0; i<n; i++) {
+            if(arr[i] > arr[i+1]) {
+                int t=arr[i];
+                arr[i] = arr[i+1];
+                arr[i+1] = t;
+            }
+        }
+        System.out.println(Arrays.toString(arr));
     }
 }

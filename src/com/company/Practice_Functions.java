@@ -300,21 +300,19 @@ public class Practice_Functions {
 //        int B = sc.nextInt();
 //        solve(A,B);
 //    }
-    public static String solve(String A) {
-        int a = 0;
-        String ans = "";
-        for (int i=0; i<A.length(); i++) {
-            if (A.charAt(i) == 'a' && A.charAt(i) == 'b') {
-                a =1;
-            }
-        }
-        System.out.print(a);
-        return ans;
+    public static int[] sortArray(int[] arr, int n) {
+        Arrays.sort(arr);
+        return arr;
     }
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        String A = sc.next();
-        solve(A);
+        int n = sc.nextInt();
+        int[] arr = new int[n];
+        for(int i=0; i<n; i++) {
+            arr[i] = sc.nextInt();
+        }
+        int[] sort = sortArray(arr, n);
+        System.out.println(Arrays.toString(sort));
     }
 }

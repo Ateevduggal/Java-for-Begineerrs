@@ -365,6 +365,6 @@ public class Practice {
 //        }else{
 //            System.out.println("Faltu Site");
 //        }
-        //
+
     }
 }
