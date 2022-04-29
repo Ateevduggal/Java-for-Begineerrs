@@ -1,4 +1,4 @@
-package com.Tekolio;
+package com.Tekolio.Arrays;
 
 import java.util.Arrays;
 import java.util.Scanner;
